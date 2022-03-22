@@ -1,0 +1,19 @@
+<app-search-bar> </app-search-bar>
+<app-product-table></app-product-table>
+<table id="myTable">
+    <th>{{productCategories[0]}}</th>
+    <tr *ngFor="let item of totalSportings ; let i = index;">
+        
+        <td>{{item.name}}</td>
+        <td>{{item.price}}</td>
+        
+    </tr>
+    <th>{{productCategories[1]}} </th>
+
+    <tr *ngFor="let item of totalElectronics ; let i = index;">
+
+        <td>{{item.name}}</td>
+        <td>{{item.price}}</td>
+
+    </tr>
+</table>
