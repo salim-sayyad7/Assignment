@@ -8,12 +8,14 @@ import { RouterLink } from '@angular/router';
 })
 export class SearchBarComponent implements OnInit {
   
-
-  constructor() { }
   
+  constructor() { }
+  router: RouterLink ;
   ngOnInit(): void {
   }
- 
+ myfunct(){
+   this.router.RouterLink = "/filter";
+ }
 
   
 }
