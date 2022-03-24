@@ -9,14 +9,14 @@ import { ProductsChartModule } from './products-chart/products-chart.module';
 import { TotalItemsServiceService } from './products-chart/catagory/total-items-service.service';
 import { ProductCategoryServiceService } from './products-chart/catagory/product-category-row/product-category-service.service';
 import { routingComponent } from './app-routing.module';
-import { MainComponent } from './main/main.component';
+
 
 @NgModule({
   declarations: [
     AppComponent,
     FilterableProductTableComponent,
     routingComponent,
-    MainComponent
+    
   ],
   imports: [
     BrowserModule,
