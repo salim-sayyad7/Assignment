@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { RouterLink } from '@angular/router';
+import { Router } from '@angular/router';
+
 
 @Component({
   selector: 'app-search-bar',
@@ -9,12 +10,12 @@ import { RouterLink } from '@angular/router';
 export class SearchBarComponent implements OnInit {
   
   
-  constructor() { }
-  router: RouterLink ;
+  constructor(private router : Router) { }
+  
   ngOnInit(): void {
   }
  myfunct(){
-   this.router.RouterLink = "/filter";
+   this.router.navigate(['/filter']);
  }
 
   
